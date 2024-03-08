@@ -364,6 +364,9 @@ for (let x in Lines) {
 			Template['_params']['Array'] = [];
 			break;
 		case "UNUSUALPOSTURE":
+			Template['_command'] = 22;
+			Template['_params']['Array'][0]['columns']['Array'][0]['values']['Array'][0]['valString'] = String(Operand[1]);
+			Template['_params']['Array'][0]['columns']['Array'][0]['values']['Array'][0]['splitValStrings']['Array'][0] = String(Operand[1]);
 			break;
 		case "FROMACTIONSET":
 			Template['_command'] = 23;

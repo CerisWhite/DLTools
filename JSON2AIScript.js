@@ -164,6 +164,7 @@ for (let ent in Inner) {
 			NextLine += "ClearDmgCnt" + "\n";
 			break;
 		case 22:
+			NextLine += "UnusualPosture " + Params[0]['columns']['Array'][0]['values']['Array'][0]['valString'] + "\n";
 			break;
 		case 23:
 			NextLine += "FromActionSet " + Params[0]['columns']['Array'][0]['values']['Array'][0]['valString'];
